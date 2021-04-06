@@ -29,14 +29,14 @@ int main(){
             printf("Назначьте первый вектор \n");
             for(int i = 0; i < size; i++) scanf("%f",&vector1[i]);
             
-            printf("Назначьте вектор два \n");
+            printf("Назначьте второй вектор \n");
             for(int i = 0; i < size; i++) scanf("%f",&vector2[i]);
             
-            printf("Выберите операцию (+, -, *)");
+            printf("Выберите операцию (+, -, *) \n");
             scanf(" %c", &vect_op);
             
             //Здесь происходят операции над векторами
-            switch(l)
+            switch(vect_op)
             {
                 case('+'):
     				for(int i = 0; i < size; i++) printf("%f ",vector1[i] + vector2[i]);
@@ -126,10 +126,13 @@ int main(){
         	        break;
         	    default:
         	    printf("Ошибка! Операция не выбрана либо не существует. Перезапустите калькулятор\n");
+        }
+        	    
         	    printf("\nЖелаете продолжить вычисления(y/n)?\n");
                 scanf(" %c", &e);
         }
         
     } while(e == 'y');
+    
     return 0;    
-} 
+}
