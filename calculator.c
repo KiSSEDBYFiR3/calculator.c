@@ -132,7 +132,6 @@ int main(){
                 scanf(" %c", &e);
         }
         
-    } while(e == 'y');
-    
+    } while(e == 'y');    
     return 0;    
 }
